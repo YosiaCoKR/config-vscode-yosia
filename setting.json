@@ -81,8 +81,8 @@
       "list.hoverBackground": "#31324480",
       "list.hoverForeground": "#cdd6f4",
       "list.inactiveSelectionBackground": "#31324440",
-      "list.highlightForeground": "#f5c2e7"
-    }
+      "list.highlightForeground": "#f5c2e7",
+    },
   },
 
   // ============================================
@@ -107,9 +107,9 @@
         "string": { "foreground": "#a6e3a1" },
         "number": { "foreground": "#fab387" },
         "comment": { "foreground": "#6c7086", "fontStyle": "italic" },
-        "macro": { "foreground": "#f38ba8", "fontStyle": "bold" }
-      }
-    }
+        "macro": { "foreground": "#f38ba8", "fontStyle": "bold" },
+      },
+    },
   },
 
   // ============================================
@@ -139,9 +139,12 @@
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
 
   // ============================================
-  // 🛸 IMMERSIVE UI (Zero Distraction)
+  // 🛸 IMMERSIVE UI & ZEN MODE
   // ============================================
   "window.titleBarStyle": "custom",
+  "window.commandCenter": false,
+  "workbench.layoutControl.enabled": false,
+  "workbench.startupEditor": "none",
   "workbench.editor.editorActionsLocation": "hidden",
   "breadcrumbs.enabled": false,
   "editor.minimap.enabled": false,
@@ -165,6 +168,54 @@
   "editor.renderLineHighlight": "all",
 
   // ============================================
+  // 🎨 AESTHETICS TWEAKS (Error Lens & Comments)
+  // ============================================
+  "errorLens.fontStyleItalic": true,
+  "errorLens.fontWeight": "100",
+  "errorLens.padding": "0.5rem",
+  "errorLens.margin": "1rem",
+  "errorLens.borderRadius": "4px",
+
+  "better-comments.tags": [
+    {
+      "tag": "!",
+      "color": "#f38ba8",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": false,
+    },
+    {
+      "tag": "?",
+      "color": "#89b4fa",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": false,
+    },
+    {
+      "tag": "TODO",
+      "color": "#fab387",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": false,
+    },
+    {
+      "tag": "FIXME",
+      "color": "#f9e2af",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": false,
+    },
+  ],
+
+  // ============================================
   // ⚡ FORMATTING (Per-Language)
   // ============================================
   "editor.formatOnSave": true,
@@ -186,24 +237,24 @@
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
       "source.fixAll": "explicit",
-      "source.organizeImports": "explicit"
-    }
+      "source.organizeImports": "explicit",
+    },
   },
   "[go]": {
     "editor.defaultFormatter": "golang.go",
     "editor.formatOnSave": true,
-    "editor.codeActionsOnSave": { "source.organizeImports": "explicit" }
+    "editor.codeActionsOnSave": { "source.organizeImports": "explicit" },
   },
   "[php]": {
     "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
   },
   "[blade]": {
     "editor.defaultFormatter": "shufo.vscode-blade-formatter",
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
   },
   "[java]": {
-    "editor.defaultFormatter": "Oracle.oracle-java"
+    "editor.defaultFormatter": "Oracle.oracle-java",
   },
 
   // ============================================
@@ -219,7 +270,7 @@
   "editor.quickSuggestions": {
     "other": "on",
     "comments": "off",
-    "strings": "on"
+    "strings": "on",
   },
 
   // ============================================
@@ -240,7 +291,7 @@
     "**/__pycache__",
     "**/dist",
     "**/build",
-    "**/.conda"
+    "**/.conda",
   ],
   "python.analysis.inlayHints.variableTypes": false,
   "python.analysis.inlayHints.functionReturnTypes": true,
@@ -271,7 +322,7 @@
     "hints.constantValues": true,
     "hints.functionTypeParameters": true,
     "hints.parameterNames": true,
-    "hints.rangeVariableTypes": true
+    "hints.rangeVariableTypes": true,
   },
 
   // ============================================
@@ -298,7 +349,7 @@
   "tailwindCSS.emmetCompletions": true,
   "tailwindCSS.includeLanguages": {
     "plaintext": "html",
-    "javascript": "javascriptreact"
+    "javascript": "javascriptreact",
   },
   "npm.fetchOnlinePackageInfo": true,
 
@@ -345,23 +396,23 @@
 
   "terminal.integrated.profiles.windows": {
     "PowerShell": {
-      "path": "C:\\Users\\rosea\\AppData\\Local\\Microsoft\\WindowsApps\\Microsoft.PowerShell_8wekyb3d8bbwe\\pwsh.exe"
+      "path": "C:\\Users\\rosea\\AppData\\Local\\Microsoft\\WindowsApps\\Microsoft.PowerShell_8wekyb3d8bbwe\\pwsh.exe",
     },
     "Command Prompt": {
       "path": [
         "${env:windir}\\Sysnative\\cmd.exe",
-        "${env:windir}\\System32\\cmd.exe"
+        "${env:windir}\\System32\\cmd.exe",
       ],
       "args": [],
-      "icon": { "id": "terminal-cmd" }
+      "icon": { "id": "terminal-cmd" },
     },
     "Git Bash": {
       "source": "Git Bash",
-      "icon": "terminal-git-bash"
+      "icon": "terminal-git-bash",
     },
     "Windows PowerShell": {
-      "path": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
-    }
+      "path": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    },
   },
 
   // ============================================
@@ -380,13 +431,13 @@
     "composer.json": "composer.lock",
     "go.mod": "go.sum, .air.toml",
     "*.py": "${capture}.pyi",
-    "pyproject.toml": "poetry.lock, requirements*.txt, setup.cfg, .python-version"
+    "pyproject.toml": "poetry.lock, requirements*.txt, setup.cfg, .python-version",
   },
 
   "editor.linkedEditing": true,
   "emmet.includeLanguages": {
     "javascript": "javascriptreact",
-    "blade": "html"
+    "blade": "html",
   },
   "emmet.triggerExpansionOnTab": true,
 
@@ -416,7 +467,7 @@
     "liquid",
     "erb",
     "cfml",
-    "HTML (Eex)"
+    "HTML (Eex)",
   ],
 
   // ============================================
@@ -434,5 +485,5 @@
   "ruff.enable": true,
   "ruff.organizeImports": true,
   "ruff.fixAll": true,
-  "ruff.lint.run": "onType"
+  "ruff.lint.run": "onType",
 }
