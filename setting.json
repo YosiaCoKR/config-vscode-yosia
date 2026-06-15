@@ -1,0 +1,438 @@
+{
+  // ============================================
+  // 🤖 WORKFLOW BOOST
+  // ============================================
+  "editor.snippetSuggestions": "default",
+  "editor.inlineSuggest.enabled": true,
+  "editor.suggest.insertMode": "replace",
+
+  // ============================================
+  // 🧹 CLEAN FILE & GIT HYGIENE
+  // ============================================
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.trimBlocks": true,
+
+  // ============================================
+  // 🌌 VISUAL CORE — Catppuccin Mocha
+  // ============================================
+  "workbench.colorTheme": "Catppuccin Mocha",
+  "workbench.iconTheme": "catppuccin-mocha",
+
+  "workbench.colorCustomizations": {
+    "[Catppuccin Mocha]": {
+      "editor.background": "#1e1e2e",
+      "editor.lineHighlightBackground": "#31324455",
+      "editor.lineHighlightBorder": "#00000000",
+      "editor.selectionBackground": "#585b7040",
+      "editor.selectionHighlightBackground": "#585b7020",
+      "editor.wordHighlightBackground": "#585b7040",
+      "editor.wordHighlightStrongBackground": "#585b7060",
+      "editor.findMatchBackground": "#f38ba855",
+      "editor.findMatchHighlightBackground": "#f38ba833",
+      "editor.rangeHighlightBackground": "#31324455",
+      "editorCursor.foreground": "#f5c2e7",
+      "editorCursor.background": "#1e1e2e",
+      "terminalCursor.foreground": "#f5c2e7",
+      "tab.activeBorder": "#cba6f7",
+      "tab.activeForeground": "#cba6f7",
+      "tab.activeBackground": "#1e1e2e",
+      "tab.inactiveBackground": "#181825",
+      "tab.inactiveForeground": "#a6adc8",
+      "tab.hoverBackground": "#313244",
+      "tab.unfocusedActiveBorder": "#b4befe",
+      "titleBar.activeBackground": "#11111b",
+      "titleBar.activeForeground": "#cdd6f4",
+      "titleBar.inactiveBackground": "#11111b",
+      "sideBar.background": "#181825",
+      "sideBar.foreground": "#cdd6f4",
+      "sideBar.border": "#1e1e2e",
+      "sideBarTitle.foreground": "#cba6f7",
+      "sideBarSectionHeader.background": "#181825",
+      "sideBarSectionHeader.foreground": "#89b4fa",
+      "sideBarSectionHeader.border": "#313244",
+      "activityBar.background": "#11111b",
+      "activityBar.foreground": "#cba6f7",
+      "activityBar.inactiveForeground": "#6c7086",
+      "activityBar.border": "#11111b",
+      "activityBarBadge.background": "#f38ba8",
+      "activityBarBadge.foreground": "#11111b",
+      "statusBar.background": "#11111b",
+      "statusBar.foreground": "#cdd6f4",
+      "statusBar.border": "#1e1e2e",
+      "statusBar.debuggingBackground": "#fab387",
+      "statusBar.debuggingForeground": "#11111b",
+      "panel.background": "#181825",
+      "panel.border": "#313244",
+      "panelTitle.activeBorder": "#cba6f7",
+      "panelTitle.activeForeground": "#cba6f7",
+      "panelTitle.inactiveForeground": "#a6adc8",
+      "input.background": "#313244",
+      "input.border": "#45475a",
+      "input.foreground": "#cdd6f4",
+      "input.placeholderForeground": "#7f849c",
+      "dropdown.background": "#313244",
+      "dropdown.border": "#45475a",
+      "button.background": "#cba6f7",
+      "button.foreground": "#11111b",
+      "button.hoverBackground": "#b4befe",
+      "list.activeSelectionBackground": "#313244",
+      "list.activeSelectionForeground": "#cdd6f4",
+      "list.hoverBackground": "#31324480",
+      "list.hoverForeground": "#cdd6f4",
+      "list.inactiveSelectionBackground": "#31324440",
+      "list.highlightForeground": "#f5c2e7"
+    }
+  },
+
+  // ============================================
+  // ✨ SEMANTIC TOKEN HIGHLIGHTING
+  // ============================================
+  "editor.semanticHighlighting.enabled": true,
+  "editor.semanticTokenColorCustomizations": {
+    "[Catppuccin Mocha]": {
+      "rules": {
+        "class": { "foreground": "#f9e2af", "fontStyle": "bold" },
+        "interface": { "foreground": "#f9e2af", "fontStyle": "italic" },
+        "function": { "foreground": "#89b4fa" },
+        "method": { "foreground": "#89b4fa" },
+        "variable": { "foreground": "#cdd6f4" },
+        "variable.readonly": { "foreground": "#f5c2e7" },
+        "parameter": { "foreground": "#fab387", "fontStyle": "italic" },
+        "property": { "foreground": "#89dceb" },
+        "type": { "foreground": "#f9e2af", "fontStyle": "italic" },
+        "namespace": { "foreground": "#f5c2e7" },
+        "decorator": { "foreground": "#a6e3a1", "fontStyle": "italic bold" },
+        "keyword": { "foreground": "#cba6f7", "fontStyle": "bold" },
+        "string": { "foreground": "#a6e3a1" },
+        "number": { "foreground": "#fab387" },
+        "comment": { "foreground": "#6c7086", "fontStyle": "italic" },
+        "macro": { "foreground": "#f38ba8", "fontStyle": "bold" }
+      }
+    }
+  },
+
+  // ============================================
+  // ⌨️ TYPOGRAPHY
+  // ============================================
+  "editor.fontFamily": "'JetBrains Mono', 'FiraCode Nerd Font', Consolas, monospace",
+  "editor.autoIndent": "advanced",
+  "editor.autoClosingBrackets": "always",
+  "editor.autoClosingQuotes": "always",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 15,
+  "editor.lineHeight": 29,
+  "editor.fontWeight": "450",
+  "editor.letterSpacing": 0.6,
+  "editor.fontSmoothing": "antialiased",
+
+  // ============================================
+  // 🌈 RAINBOW INDENTATION
+  // ============================================
+  "indenticator.width": 1,
+  "indenticator.showHighlight": true,
+  "indenticator.style": "solid",
+  "editor.guides.bracketPairs": "active",
+  "editor.guides.bracketPairsHorizontal": "active",
+  "editor.guides.highlightActiveIndentation": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+
+  // ============================================
+  // 🛸 IMMERSIVE UI (Zero Distraction)
+  // ============================================
+  "window.titleBarStyle": "custom",
+  "workbench.editor.editorActionsLocation": "hidden",
+  "breadcrumbs.enabled": false,
+  "editor.minimap.enabled": false,
+  "editor.scrollbar.vertical": "auto",
+  "editor.scrollbar.horizontal": "auto",
+  "editor.scrollbar.verticalScrollbarSize": 6,
+  "editor.scrollbar.horizontalScrollbarSize": 6,
+  "workbench.tree.indent": 22,
+  "workbench.tree.renderIndentGuides": "always",
+  "explorer.compactFolders": false,
+
+  // ============================================
+  // ✨ ANIMATION
+  // ============================================
+  "editor.cursorBlinking": "phase",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorStyle": "line",
+  "editor.cursorWidth": 2,
+  "editor.smoothScrolling": true,
+  "workbench.list.smoothScrolling": true,
+  "editor.renderLineHighlight": "all",
+
+  // ============================================
+  // ⚡ FORMATTING (Per-Language)
+  // ============================================
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "files.autoSave": "afterDelay",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[javascriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[html]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[css]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit",
+      "source.organizeImports": "explicit"
+    }
+  },
+  "[go]": {
+    "editor.defaultFormatter": "golang.go",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": { "source.organizeImports": "explicit" }
+  },
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
+    "editor.formatOnSave": true
+  },
+  "[blade]": {
+    "editor.defaultFormatter": "shufo.vscode-blade-formatter",
+    "editor.formatOnSave": true
+  },
+  "[java]": {
+    "editor.defaultFormatter": "Oracle.oracle-java"
+  },
+
+  // ============================================
+  // 🔍 INTELLISENSE & AUTOCOMPLETE
+  // ============================================
+  "editor.suggestOnTriggerCharacters": true,
+  "editor.quickSuggestionsDelay": 0,
+  "editor.suggestSelection": "recentlyUsedByPrefix",
+  "editor.suggest.preview": true,
+  "editor.suggest.showInlineDetails": true,
+  "editor.acceptSuggestionOnEnter": "on",
+  "editor.tabCompletion": "on",
+  "editor.quickSuggestions": {
+    "other": "on",
+    "comments": "off",
+    "strings": "on"
+  },
+
+  // ============================================
+  // 🐍 PYTHON & ML
+  // ============================================
+  "python.languageServer": "Pylance",
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.completeFunctionParens": true,
+  "python.analysis.diagnosticMode": "openFilesOnly",
+  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.indexing": true,
+  "python.analysis.userFileIndexingLimit": 2000,
+  "python.analysis.exclude": [
+    "**/node_modules",
+    "**/.venv",
+    "**/venv",
+    "**/env",
+    "**/__pycache__",
+    "**/dist",
+    "**/build",
+    "**/.conda"
+  ],
+  "python.analysis.inlayHints.variableTypes": false,
+  "python.analysis.inlayHints.functionReturnTypes": true,
+  "python.analysis.inlayHints.callArgumentNames": true,
+
+  // ============================================
+  // 🐹 GOLANG
+  // ============================================
+  "go.useLanguageServer": true,
+  "go.toolsManagement.autoUpdate": true,
+  "go.autocompleteUnimportedPackages": true,
+  "go.lintTool": "golangci-lint",
+  "go.lintOnSave": "workspace",
+  "go.vetOnSave": "workspace",
+  "go.formatTool": "goimports",
+  "go.testFlags": ["-v", "-count=1"],
+  "go.coverOnSave": false,
+  "go.inlayHints.assignVariableTypes": false,
+  "go.inlayHints.compositeLiteralFields": false,
+  "go.inlayHints.parameterNames": true,
+  "gopls": {
+    "ui.completion.usePlaceholders": true,
+    "ui.documentation.hoverKind": "FullDocumentation",
+    "ui.completion.experimentalPostfixCompletions": true,
+    "hints.assignVariableTypes": true,
+    "hints.compositeLiteralFields": true,
+    "hints.compositeLiteralTypes": true,
+    "hints.constantValues": true,
+    "hints.functionTypeParameters": true,
+    "hints.parameterNames": true,
+    "hints.rangeVariableTypes": true
+  },
+
+  // ============================================
+  // 🌐 JAVASCRIPT & TYPESCRIPT
+  // ============================================
+  "typescript.suggest.completeFunctionCalls": true,
+  "typescript.suggest.autoImports": true,
+  "typescript.preferences.includePackageJsonAutoImports": "on",
+  "typescript.inlayHints.parameterNames.enabled": "literals",
+  "typescript.inlayHints.parameterTypes.enabled": false,
+  "typescript.inlayHints.variableTypes.enabled": false,
+  "typescript.inlayHints.returnTypes.enabled": false,
+  "typescript.inlayHints.enumMemberValues.enabled": false,
+  "javascript.suggest.completeFunctionCalls": true,
+  "javascript.suggest.autoImports": true,
+  "javascript.inlayHints.parameterNames.enabled": "literals",
+  "javascript.inlayHints.parameterTypes.enabled": false,
+  "javascript.inlayHints.variableTypes.enabled": false,
+  "javascript.inlayHints.returnTypes.enabled": false,
+
+  // ============================================
+  // 🎨 TAILWIND CSS & NPM
+  // ============================================
+  "tailwindCSS.emmetCompletions": true,
+  "tailwindCSS.includeLanguages": {
+    "plaintext": "html",
+    "javascript": "javascriptreact"
+  },
+  "npm.fetchOnlinePackageInfo": true,
+
+  // ============================================
+  // 🐘 LARAVEL / PHP (Intelephense)
+  // ============================================
+  "php.suggest.basic": false,
+  "php.validate.enable": true,
+  "intelephense.environment.documentRoot": "public",
+  "intelephense.files.associations": ["*.php", "*.blade.php"],
+  "intelephense.completion.fullyQualifyGlobalConstantsAndFunctions": true,
+  "intelephense.completion.insertUseDeclaration": true,
+  "intelephense.completion.triggerParameterHints": true,
+
+  // ============================================
+  // ☕ JAVA
+  // ============================================
+  "jdk.jdkhome": "c:\\oracleJdk-25",
+
+  // ============================================
+  // 🌐 TRANSLATE & HOVER
+  // ============================================
+  "commentTranslate.targetLanguage": "id",
+  "commentTranslate.hover.enabled": true,
+  "editor.hover.enabled": "on",
+  "editor.hover.delay": 300,
+  "editor.parameterHints.enabled": true,
+  "editor.parameterHints.cycle": true,
+  "editor.inlayHints.enabled": "on",
+  "editor.inlayHints.padding": true,
+
+  // ============================================
+  // 🖥️ SYSTEM & TERMINAL
+  // ============================================
+  "workbench.sideBar.location": "right",
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.fontFamily": "'FiraCode Nerd Font', Consolas",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.gpuAcceleration": "on",
+  "security.workspace.trust.untrustedFiles": "open",
+  "terminal.integrated.shellIntegration.enabled": true,
+
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "path": "C:\\Users\\rosea\\AppData\\Local\\Microsoft\\WindowsApps\\Microsoft.PowerShell_8wekyb3d8bbwe\\pwsh.exe"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": { "id": "terminal-cmd" }
+    },
+    "Git Bash": {
+      "source": "Git Bash",
+      "icon": "terminal-git-bash"
+    },
+    "Windows PowerShell": {
+      "path": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+    }
+  },
+
+  // ============================================
+  // 🚀 PRODUCTIVITY & WORKFLOW
+  // ============================================
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+  "explorer.fileNesting.patterns": {
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml",
+    ".env": ".env.*",
+    "tailwind.config.js": "tailwind.config.*, postcss.config.*",
+    "next.config.js": "next-env.d.ts, tsconfig.json, jsconfig.json, .eslintrc.json",
+    "*.ts": "${capture}.js, ${capture}.d.ts",
+    "*.tsx": "${capture}.ts, ${capture}.js",
+    "*.jsx": "${capture}.js",
+    "composer.json": "composer.lock",
+    "go.mod": "go.sum, .air.toml",
+    "*.py": "${capture}.pyi",
+    "pyproject.toml": "poetry.lock, requirements*.txt, setup.cfg, .python-version"
+  },
+
+  "editor.linkedEditing": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "blade": "html"
+  },
+  "emmet.triggerExpansionOnTab": true,
+
+  // ============================================
+  // 🐙 GIT & SOURCE CONTROL
+  // ============================================
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+
+  // ============================================
+  // 🏷️ AUTO CLOSE TAG
+  // ============================================
+  "auto-close-tag.activationOnLanguage": [
+    "xml",
+    "php",
+    "blade",
+    "ejs",
+    "jinja",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "plaintext",
+    "markdown",
+    "vue",
+    "liquid",
+    "erb",
+    "cfml",
+    "HTML (Eex)"
+  ],
+
+  // ============================================
+  // 🎯 CODING COMFORT
+  // ============================================
+  "editor.stickyScroll.enabled": true,
+  "editor.stickyScroll.maxLineCount": 5,
+  "editor.wordWrap": "on",
+  "editor.dragAndDrop": false,
+  "explorer.confirmDelete": false,
+
+  // ============================================
+  // 🐍 RUFF — Python linter & formatter
+  // ============================================
+  "ruff.enable": true,
+  "ruff.organizeImports": true,
+  "ruff.fixAll": true,
+  "ruff.lint.run": "onType"
+}
