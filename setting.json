@@ -1,10 +1,13 @@
 {
   // ============================================
-  // 🤖 WORKFLOW BOOST
+  // 🤖 WORKFLOW BOOST & AI CLEANUP
   // ============================================
   "editor.snippetSuggestions": "default",
   "editor.inlineSuggest.enabled": true,
+  "editor.inlineSuggest.showToolbar": "never",
   "editor.suggest.insertMode": "replace",
+  "editor.suggest.preview": true,
+  "editor.suggest.showInlineDetails": true,
 
   // ============================================
   // 🧹 CLEAN FILE & GIT HYGIENE
@@ -21,6 +24,14 @@
 
   "workbench.colorCustomizations": {
     "[Catppuccin Mocha]": {
+      // 🟢 AI GHOST TEXT OPTIMIZATION
+      "editorInlayHint.background": "#00000000",
+      "editorInlayHint.foreground": "#6c708690",
+      "editorSuggestWidget.background": "#181825",
+      "editorSuggestWidget.border": "#313244",
+      "editorSuggestWidget.selectedBackground": "#313244",
+
+      // CORE COLORS
       "editor.background": "#1e1e2e",
       "editor.lineHighlightBackground": "#31324455",
       "editor.lineHighlightBorder": "#00000000",
@@ -113,7 +124,7 @@
   },
 
   // ============================================
-  // ⌨️ TYPOGRAPHY
+  // ⌨️ TYPOGRAPHY & NOISE REDUCTION
   // ============================================
   "editor.fontFamily": "'JetBrains Mono', 'FiraCode Nerd Font', Consolas, monospace",
   "editor.autoIndent": "advanced",
@@ -125,6 +136,9 @@
   "editor.fontWeight": "450",
   "editor.letterSpacing": 0.6,
   "editor.fontSmoothing": "antialiased",
+  "editor.inlayHints.enabled": "offUnlessPressed",
+  "editor.occurrencesHighlight": "off",
+  "editor.renderWhitespace": "selection",
 
   // ============================================
   // 🌈 RAINBOW INDENTATION
@@ -132,6 +146,7 @@
   "indenticator.width": 1,
   "indenticator.showHighlight": true,
   "indenticator.style": "solid",
+  "editor.guides.indentation": false,
   "editor.guides.bracketPairs": "active",
   "editor.guides.bracketPairsHorizontal": "active",
   "editor.guides.highlightActiveIndentation": true,
@@ -146,6 +161,8 @@
   "workbench.layoutControl.enabled": false,
   "workbench.startupEditor": "none",
   "workbench.editor.editorActionsLocation": "hidden",
+  "workbench.editor.showTabs": "multiple",
+  "workbench.editor.tabSizing": "shrink",
   "breadcrumbs.enabled": false,
   "editor.minimap.enabled": false,
   "editor.scrollbar.vertical": "auto",
@@ -263,8 +280,6 @@
   "editor.suggestOnTriggerCharacters": true,
   "editor.quickSuggestionsDelay": 0,
   "editor.suggestSelection": "recentlyUsedByPrefix",
-  "editor.suggest.preview": true,
-  "editor.suggest.showInlineDetails": true,
   "editor.acceptSuggestionOnEnter": "on",
   "editor.tabCompletion": "on",
   "editor.quickSuggestions": {
