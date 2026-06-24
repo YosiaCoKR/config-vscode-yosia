@@ -127,6 +127,7 @@
   // ⌨️ TYPOGRAPHY & NOISE REDUCTION
   // ============================================
   "editor.fontFamily": "'JetBrains Mono', 'FiraCode Nerd Font', Consolas, monospace",
+  "editor.lineNumbers": "relative",
   "editor.autoIndent": "advanced",
   "editor.autoClosingBrackets": "always",
   "editor.autoClosingQuotes": "always",
@@ -152,6 +153,45 @@
   "editor.guides.highlightActiveIndentation": true,
   "editor.bracketPairColorization.enabled": true,
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+
+  // ============================================
+  // 🔬 JUPYTER & NOTEBOOK OPTIMIZATION
+  // ============================================
+  "notebook.lineNumbers": "on",
+  "notebook.output.textLineLimit": 100,
+  "notebook.compactView": true,
+  "notebook.formatOnSave.enabled": true,
+  "notebook.codeActionsOnSave": {
+    "source.organizeImports": "explicit"
+  },
+
+  // ============================================
+  // ⚡ PERFORMANCE & SEARCH EXCLUSIONS (Anti-Lag)
+  // ============================================
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/.git": true,
+    "**/.venv": true,
+    "**/venv": true,
+    "**/.conda": true,
+    "**/__pycache__": true,
+    "**/.ipynb_checkpoints": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/out": true,
+    "**/*.pipeline": true
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "**/.venv/**": true,
+    "**/venv/**": true,
+    "**/.conda/**": true,
+    "**/__pycache__/**": true,
+    "**/.ipynb_checkpoints/**": true
+  },
 
   // ============================================
   // 🛸 IMMERSIVE UI & ZEN MODE
@@ -239,6 +279,9 @@
   "editor.formatOnPaste": true,
   "files.autoSave": "afterDelay",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit"
+  },
 
   "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[javascriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
@@ -400,12 +443,16 @@
   // 🖥️ SYSTEM & TERMINAL
   // ============================================
   "workbench.sideBar.location": "right",
+  "terminal.integrated.tabs.location": "right",
   "terminal.integrated.defaultProfile.windows": "PowerShell",
   "terminal.integrated.fontFamily": "'FiraCode Nerd Font', Consolas",
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.gpuAcceleration": "on",
+  "terminal.integrated.smoothScrolling": true,
+  "terminal.integrated.drawBoldTextInBrightColors": false,
+  "terminal.integrated.copyOnSelection": true,
   "security.workspace.trust.untrustedFiles": "open",
   "terminal.integrated.shellIntegration.enabled": true,
 
@@ -433,11 +480,20 @@
   // ============================================
   // 🚀 PRODUCTIVITY & WORKFLOW
   // ============================================
+  "editor.multiCursorModifier": "alt",
+  "workbench.list.keyboardNavigation": "filter",
+  "editor.linkedEditing": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "blade": "html"
+  },
+  "emmet.triggerExpansionOnTab": true,
+
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": false,
   "explorer.fileNesting.patterns": {
-    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml",
-    ".env": ".env.*",
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb",
+    ".env": ".env.*, .env.local",
     "tailwind.config.js": "tailwind.config.*, postcss.config.*",
     "next.config.js": "next-env.d.ts, tsconfig.json, jsconfig.json, .eslintrc.json",
     "*.ts": "${capture}.js, ${capture}.d.ts",
@@ -446,15 +502,8 @@
     "composer.json": "composer.lock",
     "go.mod": "go.sum, .air.toml",
     "*.py": "${capture}.pyi",
-    "pyproject.toml": "poetry.lock, requirements*.txt, setup.cfg, .python-version"
+    "pyproject.toml": "poetry.lock, requirements*.txt, setup.cfg, .python-version, .pylintrc, ruff.toml"
   },
-
-  "editor.linkedEditing": true,
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact",
-    "blade": "html"
-  },
-  "emmet.triggerExpansionOnTab": true,
 
   // ============================================
   // 🐙 GIT & SOURCE CONTROL
