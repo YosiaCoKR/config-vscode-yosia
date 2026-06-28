@@ -1,6 +1,6 @@
 {
   // ============================================
-  // 🤖 WORKFLOW BOOST & AI CLEANUP
+  // WORKFLOW BOOST & AI CLEANUP
   // ============================================
   "editor.snippetSuggestions": "default",
   "editor.inlineSuggest.enabled": true,
@@ -10,21 +10,21 @@
   "editor.suggest.showInlineDetails": true,
 
   // ============================================
-  // 🧹 CLEAN FILE & GIT HYGIENE
+  // CLEAN FILE & GIT HYGIENE
   // ============================================
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
   "files.trimBlocks": true,
 
   // ============================================
-  // 🌌 VISUAL CORE — Catppuccin Mocha
+  // VISUAL CORE — Catppuccin Mocha
   // ============================================
   "workbench.colorTheme": "Catppuccin Mocha",
   "workbench.iconTheme": "catppuccin-mocha",
 
   "workbench.colorCustomizations": {
     "[Catppuccin Mocha]": {
-      // 🟢 AI GHOST TEXT OPTIMIZATION
+      // AI GHOST TEXT OPTIMIZATION
       "editorInlayHint.background": "#00000000",
       "editorInlayHint.foreground": "#6c708690",
       "editorSuggestWidget.background": "#181825",
@@ -97,7 +97,7 @@
   },
 
   // ============================================
-  // ✨ SEMANTIC TOKEN HIGHLIGHTING
+  // SEMANTIC TOKEN HIGHLIGHTING
   // ============================================
   "editor.semanticHighlighting.enabled": true,
   "editor.semanticTokenColorCustomizations": {
@@ -124,7 +124,7 @@
   },
 
   // ============================================
-  // ⌨️ TYPOGRAPHY & NOISE REDUCTION
+  // TYPOGRAPHY & NOISE REDUCTION
   // ============================================
   "editor.fontFamily": "'JetBrains Mono', 'FiraCode Nerd Font', Consolas, monospace",
   "editor.lineNumbers": "relative",
@@ -141,7 +141,7 @@
   "editor.renderWhitespace": "selection",
 
   // ============================================
-  // 🌈 RAINBOW INDENTATION
+  // RAINBOW INDENTATION
   // ============================================
   "indenticator.width": 1,
   "indenticator.showHighlight": true,
@@ -154,7 +154,7 @@
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
 
   // ============================================
-  // 🔬 JUPYTER & NOTEBOOK OPTIMIZATION
+  // JUPYTER & NOTEBOOK OPTIMIZATION
   // ============================================
   "notebook.lineNumbers": "on",
   "notebook.output.textLineLimit": 100,
@@ -165,7 +165,7 @@
   },
 
   // ============================================
-  // ⚡ PERFORMANCE & SEARCH EXCLUSIONS (Anti-Lag)
+  // PERFORMANCE & SEARCH EXCLUSIONS (Anti-Lag)
   // ============================================
   "search.exclude": {
     "**/node_modules": true,
@@ -193,7 +193,7 @@
   },
 
   // ============================================
-  // 🛸 IMMERSIVE UI & ZEN MODE
+  // IMMERSIVE UI & ZEN MODE
   // ============================================
   "window.titleBarStyle": "custom",
   "window.commandCenter": false,
@@ -203,7 +203,10 @@
   "workbench.editor.showTabs": "multiple",
   "workbench.editor.tabSizing": "shrink",
   "breadcrumbs.enabled": false,
-  "editor.minimap.enabled": false,
+  "editor.minimap.enabled": true,
+  "editor.minimap.renderCharacters": false,
+  "editor.minimap.showSlider": "mouseover",
+  "editor.minimap.scale": 1,
   "editor.scrollbar.vertical": "auto",
   "editor.scrollbar.horizontal": "auto",
   "editor.scrollbar.verticalScrollbarSize": 6,
@@ -213,7 +216,7 @@
   "explorer.compactFolders": false,
 
   // ============================================
-  // ✨ ANIMATION
+  // ANIMATION
   // ============================================
   "editor.cursorBlinking": "phase",
   "editor.cursorSmoothCaretAnimation": "on",
@@ -224,7 +227,7 @@
   "editor.renderLineHighlight": "all",
 
   // ============================================
-  // 🎨 AESTHETICS TWEAKS (Error Lens & Comments)
+  // AESTHETICS TWEAKS (Error Lens & Comments)
   // ============================================
   "errorLens.fontStyleItalic": true,
   "errorLens.fontWeight": "100",
@@ -272,7 +275,7 @@
   ],
 
   // ============================================
-  // ⚡ FORMATTING (Per-Language)
+  // FORMATTING (Per-Language)
   // ============================================
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
@@ -317,7 +320,7 @@
   },
 
   // ============================================
-  // 🔍 INTELLISENSE & AUTOCOMPLETE
+  // INTELLISENSE & AUTOCOMPLETE
   // ============================================
   "editor.suggestOnTriggerCharacters": true,
   "editor.quickSuggestionsDelay": 0,
@@ -331,7 +334,7 @@
   },
 
   // ============================================
-  // 🐍 PYTHON & ML
+  // PYTHON & ML
   // ============================================
   "python.languageServer": "Pylance",
   "python.analysis.autoImportCompletions": true,
@@ -355,7 +358,7 @@
   "python.analysis.inlayHints.callArgumentNames": false,
 
   // ============================================
-  // 🐹 GOLANG
+  // GOLANG
   // ============================================
   "go.useLanguageServer": true,
   "go.toolsManagement.autoUpdate": true,
@@ -383,7 +386,7 @@
   },
 
   // ============================================
-  // 🌐 JAVASCRIPT & TYPESCRIPT
+  // JAVASCRIPT & TYPESCRIPT
   // ============================================
   "typescript.suggest.completeFunctionCalls": true,
   "typescript.suggest.autoImports": true,
@@ -401,7 +404,7 @@
   "javascript.inlayHints.returnTypes.enabled": false,
 
   // ============================================
-  // 🎨 TAILWIND CSS & NPM
+  // TAILWIND CSS & NPM
   // ============================================
   "tailwindCSS.emmetCompletions": true,
   "tailwindCSS.includeLanguages": {
@@ -411,7 +414,7 @@
   "npm.fetchOnlinePackageInfo": true,
 
   // ============================================
-  // 🐘 LARAVEL / PHP (Intelephense)
+  // LARAVEL / PHP (Intelephense)
   // ============================================
   "php.suggest.basic": false,
   "php.validate.enable": true,
@@ -422,12 +425,12 @@
   "intelephense.completion.triggerParameterHints": true,
 
   // ============================================
-  // ☕ JAVA
+  // JAVA
   // ============================================
   "jdk.jdkhome": "c:\\oracleJdk-25",
 
   // ============================================
-  // 🌐 TRANSLATE & HOVER
+  // TRANSLATE & HOVER
   // ============================================
   "commentTranslate.targetLanguage": "id",
   "commentTranslate.hover.enabled": true,
@@ -439,7 +442,7 @@
   "editor.inlayHints.padding": true,
 
   // ============================================
-  // 🖥️ SYSTEM & TERMINAL
+  // SYSTEM & TERMINAL
   // ============================================
   "workbench.sideBar.location": "right",
   "terminal.integrated.tabs.location": "right",
@@ -477,7 +480,7 @@
   },
 
   // ============================================
-  // 🚀 PRODUCTIVITY & WORKFLOW
+  // PRODUCTIVITY & WORKFLOW
   // ============================================
   "editor.multiCursorModifier": "alt",
   "workbench.list.keyboardNavigation": "filter",
@@ -505,14 +508,14 @@
   },
 
   // ============================================
-  // 🐙 GIT & SOURCE CONTROL
+  // GIT & SOURCE CONTROL
   // ============================================
   "git.autofetch": true,
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
 
   // ============================================
-  // 🏷️ AUTO CLOSE TAG
+  // AUTO CLOSE TAG
   // ============================================
   "auto-close-tag.activationOnLanguage": [
     "xml",
@@ -534,7 +537,7 @@
   ],
 
   // ============================================
-  // 🎯 CODING COMFORT
+  // CODING COMFORT
   // ============================================
   "editor.stickyScroll.enabled": true,
   "editor.stickyScroll.maxLineCount": 5,
@@ -543,7 +546,7 @@
   "explorer.confirmDelete": false,
 
   // ============================================
-  // 🐍 RUFF — Python linter & formatter
+  // RUFF — Python linter & formatter
   // ============================================
   "ruff.enable": true,
   "ruff.organizeImports": true,
