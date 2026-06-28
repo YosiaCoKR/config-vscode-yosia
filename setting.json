@@ -137,7 +137,6 @@
   "editor.fontWeight": "450",
   "editor.letterSpacing": 0.6,
   "editor.fontSmoothing": "antialiased",
-  "editor.inlayHints.enabled": "offUnlessPressed",
   "editor.occurrencesHighlight": "off",
   "editor.renderWhitespace": "selection",
 
@@ -326,9 +325,9 @@
   "editor.acceptSuggestionOnEnter": "on",
   "editor.tabCompletion": "on",
   "editor.quickSuggestions": {
-    "other": "on",
+    "other": "off",
     "comments": "off",
-    "strings": "on"
+    "strings": "off"
   },
 
   // ============================================
@@ -352,8 +351,8 @@
     "**/.conda"
   ],
   "python.analysis.inlayHints.variableTypes": false,
-  "python.analysis.inlayHints.functionReturnTypes": true,
-  "python.analysis.inlayHints.callArgumentNames": true,
+  "python.analysis.inlayHints.functionReturnTypes": false,
+  "python.analysis.inlayHints.callArgumentNames": false,
 
   // ============================================
   // 🐹 GOLANG
@@ -436,7 +435,7 @@
   "editor.hover.delay": 300,
   "editor.parameterHints.enabled": true,
   "editor.parameterHints.cycle": true,
-  "editor.inlayHints.enabled": "on",
+  "editor.inlayHints.enabled": "offUnlessPressed",
   "editor.inlayHints.padding": true,
 
   // ============================================
