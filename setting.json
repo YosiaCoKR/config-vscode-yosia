@@ -279,7 +279,7 @@
   // ============================================
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
-  "files.autoSave": "afterDelay",
+  "files.autoSave": "onFocusChange",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.codeActionsOnSave": {
     "source.organizeImports": "explicit"
@@ -455,6 +455,7 @@
   "terminal.integrated.smoothScrolling": true,
   "terminal.integrated.drawBoldTextInBrightColors": false,
   "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.enableMultiLinePasteWarning": false,
   "security.workspace.trust.untrustedFiles": "open",
   "terminal.integrated.shellIntegration.enabled": true,
 
@@ -508,11 +509,18 @@
   },
 
   // ============================================
+  // DEBUGGING
+  // ============================================
+  "debug.inlineValues": "on",
+  "debug.internalConsoleOptions": "openOnSessionStart",
+
+  // ============================================
   // GIT & SOURCE CONTROL
   // ============================================
   "git.autofetch": true,
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
+  "diffEditor.ignoreTrimWhitespace": true,
 
   // ============================================
   // AUTO CLOSE TAG
@@ -544,6 +552,8 @@
   "editor.wordWrap": "on",
   "editor.dragAndDrop": false,
   "explorer.confirmDelete": false,
+  "explorer.autoReveal": true,
+  "explorer.sortOrder": "foldersNestsFiles",
 
   // ============================================
   // RUFF — Python linter & formatter
