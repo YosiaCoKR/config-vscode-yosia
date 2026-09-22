@@ -1,5 +1,13 @@
 {
   // ============================================
+  // WORKSPACE LAYOUT
+  // ============================================
+  "workbench.panel.defaultLocation": "bottom",
+  "workbench.sideBar.location": "right", // Explorer/Search/Source Control + activity bar pindah ke kanan
+  "workbench.secondarySideBar.defaultVisibility": "visible", // secondary sidebar otomatis di sisi BERLAWANAN (kiri) — taruh Chat di sini
+  "workbench.panel.opensMaximized": "never",
+
+  // ============================================
   // WORKFLOW BOOST & AI CLEANUP
   // ============================================
   "editor.snippetSuggestions": "default",
@@ -15,23 +23,21 @@
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
   "files.trimBlocks": true,
+  "files.autoSave": "afterDelay",
 
   // ============================================
   // VISUAL CORE — Catppuccin Mocha
   // ============================================
   "workbench.colorTheme": "Catppuccin Mocha",
-  "workbench.iconTheme": "catppuccin-mocha",
+  "workbench.iconTheme": "catppuccin-perfect-mocha",
 
   "workbench.colorCustomizations": {
     "[Catppuccin Mocha]": {
-      // AI GHOST TEXT OPTIMIZATION
       "editorInlayHint.background": "#00000000",
       "editorInlayHint.foreground": "#6c708690",
       "editorSuggestWidget.background": "#181825",
       "editorSuggestWidget.border": "#313244",
       "editorSuggestWidget.selectedBackground": "#313244",
-
-      // CORE COLORS
       "editor.background": "#1e1e2e",
       "editor.lineHighlightBackground": "#31324455",
       "editor.lineHighlightBorder": "#00000000",
@@ -279,7 +285,6 @@
   // ============================================
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
-  "files.autoSave": "onFocusChange",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.codeActionsOnSave": {
     "source.organizeImports": "explicit"
@@ -298,8 +303,8 @@
     "editor.defaultFormatter": "charliermarsh.ruff",
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
-      "source.fixAll": "explicit",
-      "source.organizeImports": "explicit"
+      "source.fixAll.ruff": "explicit",
+      "source.organizeImports.ruff": "explicit"
     }
   },
   "[go]": {
@@ -328,13 +333,13 @@
   "editor.acceptSuggestionOnEnter": "on",
   "editor.tabCompletion": "on",
   "editor.quickSuggestions": {
-    "other": "off",
+    "other": "on",
     "comments": "off",
     "strings": "off"
   },
 
   // ============================================
-  // PYTHON & ML
+  // PYTHON & ML (Pylance, bukan cursorpyright)
   // ============================================
   "python.languageServer": "Pylance",
   "python.analysis.autoImportCompletions": true,
@@ -356,6 +361,7 @@
   "python.analysis.inlayHints.variableTypes": false,
   "python.analysis.inlayHints.functionReturnTypes": false,
   "python.analysis.inlayHints.callArgumentNames": false,
+  "python.defaultInterpreterPath": "c:\\Users\\rosea\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
 
   // ============================================
   // GOLANG
@@ -434,17 +440,16 @@
   // ============================================
   "commentTranslate.targetLanguage": "id",
   "commentTranslate.hover.enabled": true,
-  "editor.hover.enabled": "on",
+  "editor.hover.enabled": "true",
   "editor.hover.delay": 300,
   "editor.parameterHints.enabled": true,
   "editor.parameterHints.cycle": true,
-  "editor.inlayHints.enabled": "offUnlessPressed",
+  "editor.inlayHints.enabled": "on",
   "editor.inlayHints.padding": true,
 
   // ============================================
   // SYSTEM & TERMINAL
   // ============================================
-  "workbench.sideBar.location": "right",
   "terminal.integrated.tabs.location": "right",
   "terminal.integrated.defaultProfile.windows": "PowerShell",
   "terminal.integrated.fontFamily": "'FiraCode Nerd Font', Consolas",
@@ -556,10 +561,33 @@
   "explorer.sortOrder": "foldersNestsFiles",
 
   // ============================================
-  // RUFF — Python linter & formatter
+  // RUFF — Python linter & formatter (Native Server)
   // ============================================
   "ruff.enable": true,
-  "ruff.organizeImports": true,
-  "ruff.fixAll": true,
-  "ruff.lint.run": "onType"
+  "ruff.run": "onType",
+  "ruff.nativeServer": "on",
+
+  // ============================================
+  // ACTIVITY BAR (setting standar VS Code, sinkron sama config Cursor)
+  // ============================================
+  "workbench.activityBar.location": "default",
+
+  // ============================================
+  // CHAT & COPILOT
+  // ============================================
+  "chat.mcp.gallery.enabled": true,
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "terminal.integrated.initialHint": false,
+  "chat.tools.terminal.autoApprove": {
+    "/^python --version; pip show scrapy \\| Select-Object Name,Version$/": {
+      "approve": true,
+      "matchCommandLine": true
+    }
+  },
+  "github.copilot.enable": {},
+  "chat.sessionSync.enabled": true,
+  "chat.viewSessions.orientation": "stacked"
+
+  // Kalau kamu juga pakai extension "Claude Code" di VS Code (bukan cuma Copilot Chat),
+  // tambahkan juga: "claudeCode.preferredLocation": "sidebar"
 }
